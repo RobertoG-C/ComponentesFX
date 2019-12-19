@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import dad.javafx.components.datechosser.DateChosser?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="view" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <DateChosser fx:id="dateChooser" />
+      <HBox alignment="CENTER" spacing="5.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <children>
+            <Button fx:id="inicia" mnemonicParsing="false" onAction="#butI" text="Inicializa" />
+            <Button fx:id="consulta" mnemonicParsing="false" onAction="#butC" text="Consulta" />
+         </children>
+      </HBox>
+   </children>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints halignment="CENTER" />
+   </columnConstraints>
+</GridPane>
